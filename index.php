@@ -10,7 +10,7 @@
     <hr>
 
     <?php
-    $dirname = "uploaded_files/";
+    $dirname = "upload/";
     $images = glob($dirname."*.*");
     
     foreach($images as $image) {
