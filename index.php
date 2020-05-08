@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View</title>
+    <title>Index View</title>
 </head>
 <body>
     <a href="upload.php">Upload</a>
@@ -14,7 +14,7 @@
     $images = glob($dirname."*.*");
     
     foreach($images as $image) {
-        echo '<img src="'.$image.'" width="50" height="50"/><br />';
+        echo '<img src="'.$image.'" width="50" height="50"/>';
     }
     ?>
 </body>
