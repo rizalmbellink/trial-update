@@ -24,3 +24,5 @@ if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload') {
         }
     }
 }
+
+echo $message."<br><a href='index.php'>Back</a>";

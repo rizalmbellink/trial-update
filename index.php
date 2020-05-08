@@ -6,9 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="proses.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="uploadedFile" required>
-        <input type="submit" name="uploadBtn" value="Upload" />
-    </form>
+<a href="upload.php">Upload</a><hr>
+    <?php
+    $dirname = "uploaded_files/";
+    $images = glob($dirname."*.*");
+    
+    foreach($images as $image) {
+        echo '<img src="'.$image.'" width="50" height="50"/><br />';
+    }
+    ?>
 </body>
 </html>
